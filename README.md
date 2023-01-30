@@ -3,13 +3,13 @@
 # a url without scheme like https:// (e.g., ```url: foodorganisms.txt```) 
 # is assumed to be a local file in working directory
 datasets:
-    - url: names.csv
-      enabled: true
-      type: text/csv
     - id: mdd
-      enabled: false
+      enabled: true
       name: Mammal Diversity Database
       type: application/nomer
+    - url: names.csv
+      enabled: false
+      type: text/csv
     - url: https://example.org/data.tsv
       enabled: false
       type: text/tab-separated-values
@@ -37,16 +37,16 @@ taxonomies:
       enabled: true
       name: NCBI Taxonomy
     - id: discoverlife
-      enabled: true
+      enabled: false
       name: Discover Life Taxonomy
     - id: batnames
-      enabled: false
+      enabled: true
       name: Bat Names 
     - id: col
-      enabled: false
+      enabled: true
       name: Catalogue of Life
     - id: gbif
-      enabled: false
+      enabled: true
       name: GBIF Backbone Taxonomy
     - id: globi
       enabled: false
@@ -64,7 +64,7 @@ taxonomies:
       enabled: false
       name: Paleobiology Database
     - id: plazi
-      enabled: false
+      enabled: true
       name: Plazi Treatments
     - id: tpt
       enabled: false
