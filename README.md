@@ -55,7 +55,7 @@ taxonomies:
       enabled: false
       name: Index Fungorum
     - id: mdd
-      enabled: false
+      enabled: true
       name: Mammal Diversity Database
     - id: ott
       enabled: false
